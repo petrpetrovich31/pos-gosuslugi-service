@@ -1,0 +1,29 @@
+{
+  "name": "petr-petrovich/pos-gosuslugi-service",
+  "description": "Package for using REST API of POS Gosuslugi ",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Petr Petrovich",
+      "email": "peter-bel13@yandex.ru"
+    }
+  ],
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "PetrPetrovich\\POS\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "PetrPetrovich\\POS\\POSServiceProvider"
+      ]
+    }
+  },
+  "require": {
+    "php": "^7.4 | ^8.0",
+    "guzzlehttp/guzzle": "^7",
+    "laravel/framework": "^8.0"
+  }
+}
